@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jarvis AI Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <div class="jarvis-container">
+    <div class="header">
+      <h1> AI Assistant</h1>
+      <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    </div>
+
+    <div id="chat-box"></div>
+
+    <div class="input-section">
+      <select id="language-select">
+        <option value="en-US">English</option>
+        <option value="hi-IN">Hindi</option>
+        <option value="ur-PK">Urdu</option>
+        <option value="fr-FR">French</option>
+        <option value="es-ES">Spanish</option>
+      </select>
+
+      <input type="text" id="user-input" placeholder="Ask something...">
+
+      <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+     <button id="mic-btn"><i class="fas fa-microphone"></i></button>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
